@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import TestText from './components/parts/TestText';
+import TestStateCard from './components/mass/TestStateCard';
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
           Learn React
         </a>
         <TestText test={'aaa'}></TestText>
+        <TestText></TestText>
+        <TestStateCard initialNumber={100}></TestStateCard>
+        <TestStateCard></TestStateCard>
       </header>
     </div>
   );
