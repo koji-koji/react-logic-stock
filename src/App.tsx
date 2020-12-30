@@ -33,15 +33,9 @@ const App = () => {
 const Routing = () => {
   return (
     <Switch>
-      <Route path="/about">
-        <AboutPage />
-      </Route>
-      <Route path="/users">
-        <UsersPage />
-      </Route>
-      <Route path="/">
-        <HomePage />
-      </Route>
+      <Route path="/about"><AboutPage /></Route>
+      <Route path="/users"><UsersPage /></Route>
+      <Route path="/"><HomePage /></Route>
     </Switch>
   )
 }
@@ -51,15 +45,9 @@ const Navigation = () => {
     <div>
       <nav>
         <ul>
-          <li>
-            <Link to="/asdfsdfafdfa">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/users">Users</Link>
-          </li>
+          <li><Link to="/asdfsdfafdfa">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/users">Users</Link></li>
         </ul>
       </nav>
     </div>
